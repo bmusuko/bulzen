@@ -1,0 +1,55 @@
+Database :
+
+User :
+- Username
+- Nama
+- Email
+- password
+- User level {0,1} 
+
+Warehouse :
+- id_warehouse
+- nama warehouse
+
+Category :
+- id_category
+- nama_category
+
+Barang :
+- Id_barang
+- Brand
+- id_category
+- Model
+- Year
+- License plate
+- Status
+- id_warehouse
+- current_project {}
+- is_maintain
+
+Project :
+- id_project 
+- lokasi_project
+- nama_project
+
+status : {
+	1 = occupied
+	2 = maintanance
+	3 = available
+}
+
+History = 
+- id_barang
+- timestamp
+- status_awal
+- status_akhir
+
+
+
+
+Backend = 
+- Register
+- Login
+- Get dashboard
+- Get Barang berdasarkan warehouse
+- 
