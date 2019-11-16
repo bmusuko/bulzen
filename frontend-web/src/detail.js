@@ -60,7 +60,7 @@ class Detail extends React.Component {
               <PieChartDetail />
               <Row>
                 <Col>
-                  <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                  <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
@@ -74,7 +74,7 @@ class Detail extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                  <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
@@ -88,7 +88,7 @@ class Detail extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                  <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
@@ -102,7 +102,7 @@ class Detail extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                  <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
