@@ -1,9 +1,8 @@
-import './detail.css';
+import './heavy.css';
 
 import React from 'react';
 import { ButtonDropdown, Container, Row, Col, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import PieChartDetail from './pieChart'
-
 const Example = (props) => {
   const [dropdownOpen, setOpen] = React.useState(false);
 
@@ -27,7 +26,7 @@ const Example = (props) => {
   );
 }
 
-class Detail extends React.Component {
+class Heavy extends React.Component {
   // const [dropdownOpen, setDropdownOpen] = React.useState(false);
   
   // const toggle = () => setDropdownOpen(prevState => !prevState);
@@ -47,4 +46,4 @@ class Detail extends React.Component {
       );
     }
 }
-export default Detail
+export default Heavy
