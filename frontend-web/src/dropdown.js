@@ -9,11 +9,19 @@ class Dropdown extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.changeValue = this.changeValue.bind(this);
-        this.state = {
-            actions: [],
-            dropDownValue: 'Select action',
-            dropdownOpen: false,
-        };
+        if(this.props.warehouse){
+            this.state = {
+                actions: [],
+                dropDownValue: 'Select Warehouse',
+                dropdownOpen: false,
+            };
+        } else{
+            this.state = {
+                actions: [],
+                dropDownValue: 'Warehouse '+ this.props.warehouse,
+                dropdownOpen: false,
+            };
+        }
     }
     toggle(event) {
         this.setState({
@@ -23,6 +31,7 @@ class Dropdown extends React.Component {
 
     changeValue(event){
         this.setState({dropDownValue: event.currentTarget.textContent})
+        this.props.onchange(event.currentTarget.textContent.split(' ')[1])
     }
     render(){
         return (
@@ -32,11 +41,11 @@ class Dropdown extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem header>Jakarta</DropdownItem>
-                <DropdownItem onClick={this.changeValue} onclickdropDownValue="Warehouse 1">Warehouse 1</DropdownItem>
-                <DropdownItem onClick={this.changeValue} dropDownValue="Warehouse 2">Warehouse 2</DropdownItem>
+                <DropdownItem onClick={this.changeValue} >Warehouse 1</DropdownItem>
+                <DropdownItem onClick={this.changeValue} >Warehouse 2</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>Bekasi</DropdownItem>
-                <DropdownItem onClick={this.changeValue} dropDownValue="Warehouse 3">Warehouse 3</DropdownItem>
+                <DropdownItem onClick={this.changeValue} >Warehouse 3</DropdownItem>
             </DropdownMenu>
             </ButtonDropdown>
         )

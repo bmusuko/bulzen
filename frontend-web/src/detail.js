@@ -12,9 +12,30 @@ import wrench from './asset/tools.png'
 
 
 class Detail extends React.Component {
+
+  constructor(props){
+    super(props);
+    let dropdownval = window.location.search.slice(1).split('warehouse=')[1];
+    if(typeof(dropdownval) === "undefined"){
+      this.state = {
+        warehouse : '0'  
+      }
+    } else{
+      this.state = {
+        warehouse : dropdownval
+      }
+    }
+    this.onchange = this.onchange.bind(this);
+    console.log(this.state.warehouse);
+  }
+
+  onchange(value){
+    this.setState({warehouse:value})
+    console.log(value);
+  }
   render() {
       return (
-        <Container>
+        <Container style={{'marginTop' : '2rem'}}>
           <Row>
             <Col>
               <Row>
@@ -22,44 +43,49 @@ class Detail extends React.Component {
                   <h4>Select Warehouse</h4>
                 </Col>
                 <Col>
-                <Dropdown />
+                <Dropdown warehouse={this.state.warehouse} onchange={this.onchange}/>
                 </Col>
               </Row>
               <hr />
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>Dump Truck</b></h5>
                 </CardBody>
               </Card>
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>BullDozer</b></h5>
                 </CardBody>
               </Card>
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>Tower Crane</b></h5>
                 </CardBody>
               </Card>
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>Concrete Pump</b></h5>
                 </CardBody>
               </Card>
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>Generating Set</b></h5>
                 </CardBody>
               </Card>
-              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
                 <CardBody>
-                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                <h5 style={{'margin' :'auto'}}><b>Passenger Hoist</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '80%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin' :'auto'}}><b>Excavator</b></h5>
                 </CardBody>
               </Card>
             </Col>
             <Col>
               <PieChartDetail />
-              <Row>
+              <Row style={{'marginTop' : '1rem'}}>
                 <Col>
                   <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
                     <CardBody style ={{backgroundColor:'red'}}>

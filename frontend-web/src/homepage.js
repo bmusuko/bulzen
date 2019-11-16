@@ -66,7 +66,7 @@ class Home extends React.Component {
           <Row>
             <Col>
               <Card style = {{width: '18rem' , margin:'1rem'}}>
-                <a href='/detail'>
+                <a href='/detail?warehouse=1'>
                 <CardImg top width="100%" src={warehouse1} alt="Card image cap" />
                 </a>
                 <CardBody>
@@ -74,13 +74,13 @@ class Home extends React.Component {
                 <Doughnut ref="chart" data={data1} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>60 %</b></CardSubtitle>
                 <CardText>Jl. Raya Narogong Km 15 57 Cileungsi</CardText>
-                <Button href='/detail'>Detail</Button>
+                <Button href='/detail?warehouse=1'>Detail</Button>
                 </CardBody>
               </Card>
             </Col>
             <Col>
               <Card style = {{width: '18rem' , margin:'1rem'}}>
-                <a href='/detail'>
+                <a href='/detail?warehouse=2'>
                 <CardImg top width="100%" src={warehouse2} alt="Card image cap" />
                 </a>
                 <CardBody>
@@ -88,13 +88,13 @@ class Home extends React.Component {
                 <Doughnut ref="chart" data={data2} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>30 %</b></CardSubtitle>
                 <CardText>Jl. Pemuda No.165, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah</CardText>
-                <Button href='/detail'>Detail</Button>
+                <Button href='/detail?warehouse=2'>Detail</Button>
                 </CardBody>
               </Card>
             </Col>
             <Col>
               <Card style = {{width: '18rem' , margin:'1rem'}}>
-                <a href='/detail'>
+                <a href='/detail?warehouse=3'>
                 <CardImg top width="100%" src={warehouse3} alt="Card image cap" />
                 </a>
                 <CardBody>
@@ -102,7 +102,7 @@ class Home extends React.Component {
                 <Doughnut ref="chart" data={data3} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>90 %</b></CardSubtitle>
                 <CardText>Jl. Imam Bonjol No.16, Lebakgede, Kecamatan Coblong</CardText>
-                <Button href='/detail'>Detail</Button>
+                <Button href='/detail?warehouse=3'>Detail</Button>
                 </CardBody>
               </Card>
             </Col>
