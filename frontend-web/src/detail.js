@@ -1,7 +1,8 @@
 import './detail.css';
 import Dropdown from './dropdown'
 import React from 'react';
-import {Container, Row, Col,Card,CardTitle,CardBody} from 'reactstrap';
+import { Container, Row, Col,Card,CardBody } from 'reactstrap';
+import PieChartDetail from './pieChart'
 
 
 class Detail extends React.Component {
@@ -51,7 +52,7 @@ class Detail extends React.Component {
               </Card>
             </Col>
             <Col>
-            <h1>HEHEHE</h1>
+            <PieChartDetail />
             </Col>
           </Row>
         </Container>
