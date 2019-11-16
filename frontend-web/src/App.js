@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 // import { func } from 'prop-types';
 import Home from './homepage'
 import LineDemo  from './chartss'
-import Heavy from './heavy'
+import Detail from './detail'
 import SparePart from './sparePart'
 import Consumables from './consumables'
 import Navibar from './navbar'
@@ -17,7 +17,7 @@ function App() {
     {/* {location.pathname === '/login' || <Header/>} */}
     <Navibar />
     <Route exact path='/' component={Home}/>
-    <Route exact path='/heavy' component={Heavy} />
+    <Route exact path='/detail' component={Detail} />
     <Route exact path='/sparepart' component={SparePart} />
     <Route exact path='/consumables' component={Consumables} />
     <Route exact path='/Chart' component={LineDemo} />

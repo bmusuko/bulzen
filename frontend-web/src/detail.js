@@ -1,4 +1,4 @@
-import './heavy.css';
+import './detail.css';
 
 import React from 'react';
 import { ButtonDropdown, Container, Row, Col, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
@@ -26,7 +26,7 @@ const Example = (props) => {
   );
 }
 
-class Heavy extends React.Component {
+class Detail extends React.Component {
   // const [dropdownOpen, setDropdownOpen] = React.useState(false);
   
   // const toggle = () => setDropdownOpen(prevState => !prevState);
@@ -46,4 +46,4 @@ class Heavy extends React.Component {
       );
     }
 }
-export default Heavy
+export default Detail
