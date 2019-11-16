@@ -1,42 +1,54 @@
 import './detail.css';
-
+import Dropdown from './dropdown'
 import React from 'react';
-import { ButtonDropdown, Container, Row, Col, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {Container, Row, Col,Card,CardTitle,CardBody} from 'reactstrap';
 
-const Example = (props) => {
-  const [dropdownOpen, setOpen] = React.useState(false);
-
-  const toggle = () => setOpen(!dropdownOpen);
-
-  return (
-    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-      <DropdownToggle caret>
-        Button Dropdown
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem header>Jakarta</DropdownItem>
-        {/* <DropdownItem disabled>Action</DropdownItem> */}
-        <DropdownItem>Warehouse 1</DropdownItem>
-        <DropdownItem>Warehouse 2</DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem header>Bekasi</DropdownItem>
-        <DropdownItem>Warehouse 3</DropdownItem>
-      </DropdownMenu>
-    </ButtonDropdown>
-  );
-}
 
 class Detail extends React.Component {
-  // const [dropdownOpen, setDropdownOpen] = React.useState(false);
-  
-  // const toggle = () => setDropdownOpen(prevState => !prevState);
   render() {
       return (
         <Container>
           <Row>
             <Col>
-              <h4>Select Warehouse</h4>
-              <Example />
+              <Row>
+                <Col>
+                  <h4>Select Warehouse</h4>
+                </Col>
+                <Col>
+                <Dropdown />
+                </Col>
+              </Row>
+              <hr />
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
+              <Card style = {{width: '100%' , margin:'1rem','border':'2px solid','padding':'none'}}>
+                <CardBody>
+                <h5 style={{'margin-left' : '2rem'}}><b>Warehouse 1</b></h5>
+                </CardBody>
+              </Card>
             </Col>
             <Col>
             <h1>HEHEHE</h1>
