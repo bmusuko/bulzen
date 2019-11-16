@@ -1,53 +1,113 @@
 import React from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    CardTitle, CardSubtitle, Button, Container, Row, Col
   } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import heavy from './asset/heavy3.png'
-import sparePart from './asset/sparePart.png'
-import consumables from './asset/resources.png'
+import warehouse1 from './asset/warehouse1.jpg'
+import warehouse2 from './asset/warehouse2.jpg'
+import warehouse3 from './asset/warehouse3.jpg'
+import { Doughnut } from 'react-chartjs-2';
+
+const data1 = {
+  labels: ["Available","Not Available"],
+  datasets: [
+    {
+      label: "Capacity",
+      backgroundColor: [
+        "rgba(255, 127, 0)",
+        "rgba(0,0,0,0)"
+      ],
+      data: [60,40]
+    }
+  ],
+};
+
+const option = {
+  legend: {
+      display: false
+  }
+}
+
+
+const data2 = {
+  labels: ["Available","Not Available"],
+  datasets: [
+    {
+      label: "Capacity",
+      backgroundColor: [
+        "rgba(0, 255, 0)",
+        "rgba(0,0,0,0)"
+      ],
+      data: [30,70]
+    }
+  ],
+};
+
+const data3 = {
+  labels: ["Available","Not Available"],
+  datasets: [
+    {
+      label: "Capacity",
+      backgroundColor: [
+        "rgba(255, 0, 0)",
+        "rgba(0,0,0,0)"
+      ],
+      data: [90,10]
+    }
+  ],
+};
+
 
 class Home extends React.Component {
     render() {
       return (
-        <div>
-          <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <a href='/heavy'>
-            <CardImg top width="100%" src={heavy} alt="Card image cap" />
-            </a>
-            <CardBody>
-            <CardTitle>Heavy Equipment</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button href='/heavy'>Button</Button>
-            </CardBody>
-          </Card>
-
-          <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <a href='/sparepart'>
-            <CardImg top width="100%" src={sparePart} alt="Card image cap" />
-            </a>
-            <CardBody>
-            <CardTitle>Spare Part</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button href='./sparepart'>Button</Button>
-            </CardBody>
-          </Card>
-
-          <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <a href='/consumables'>
-            <CardImg top width="100%" src={consumables} alt="Card image cap" />
-            </a>
-            <CardBody>
-            <CardTitle>Consumables</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button href='./consumables'>Button</Button>
-            </CardBody>
-          </Card>
-        </div>
+        <Container style={{'margin-top' : '5rem'}}>
+          <Row>
+            <Col>
+              <Card style = {{width: '18rem' , margin:'1rem'}}>
+                <a href='/heavy'>
+                <CardImg top width="100%" src={warehouse1} alt="Card image cap" />
+                </a>
+                <CardBody>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 1</b></h4>
+                <Doughnut ref="chart" data={data1} options={option}/>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>60 %</b></CardSubtitle>
+                <CardText>Warehouse berada di Jl. Raya Narogong Km 15 57 Cileungsi</CardText>
+                <Button href='/heavy'>Detail</Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col>
+              <Card style = {{width: '18rem' , margin:'1rem'}}>
+                <a href='/heavy'>
+                <CardImg top width="100%" src={warehouse2} alt="Card image cap" />
+                </a>
+                <CardBody>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 2</b></h4>
+                <Doughnut ref="chart" data={data2} options={option}/>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>30 %</b></CardSubtitle>
+                <CardText>Warehouse berada di Jl. Pemuda No.165, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah</CardText>
+                <Button href='/heavy'>Detail</Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col>
+              <Card style = {{width: '18rem' , margin:'1rem'}}>
+                <a href='/heavy'>
+                <CardImg top width="100%" src={warehouse3} alt="Card image cap" />
+                </a>
+                <CardBody>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 3</b></h4>
+                <Doughnut ref="chart" data={data3} options={option}/>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>90 %</b></CardSubtitle>
+                <CardText>Warehouse berada di Jl. Imam Bonjol No.16, Lebakgede, Kecamatan Coblong</CardText>
+                <Button href='/heavy'>Detail</Button>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       );
     }
 }
