@@ -1,19 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import { homedir } from 'os';
-import { func } from 'prop-types';
+// import { homedir } from 'os';
+// import { func } from 'prop-types';
 import Home from './homepage'
 import LineDemo  from './chartss'
 import Heavy from './heavy'
 import SparePart from './sparePart'
 import Consumables from './consumables'
+import Navbar from './navbar'
 
 function App() {
   return (
     <Router>
     {/* {location.pathname === '/login' || <Header/>} */}
+    {/* <Navbar /> */}
     <Route exact path='/' component={Home}/>
     <Route exact path='/heavy' component={Heavy} />
     <Route exact path='/sparepart' component={SparePart} />

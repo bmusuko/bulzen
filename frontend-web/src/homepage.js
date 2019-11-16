@@ -20,7 +20,7 @@ class Home extends React.Component {
             <CardTitle>Heavy Equipment</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
+            <Button href='/heavy'>Button</Button>
             </CardBody>
           </Card>
 
@@ -32,7 +32,7 @@ class Home extends React.Component {
             <CardTitle>Spare Part</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
+            <Button href='./sparepart'>Button</Button>
             </CardBody>
           </Card>
 
@@ -44,7 +44,7 @@ class Home extends React.Component {
             <CardTitle>Consumables</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
+            <Button href='./consumables'>Button</Button>
             </CardBody>
           </Card>
         </div>
