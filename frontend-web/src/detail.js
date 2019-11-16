@@ -3,6 +3,7 @@ import './detail.css';
 import React from 'react';
 import { ButtonDropdown, Container, Row, Col, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import PieChartDetail from './pieChart'
+import LineChartDetail from './lineChart'
 
 const Example = (props) => {
   const [dropdownOpen, setOpen] = React.useState(false);
@@ -41,6 +42,8 @@ class Detail extends React.Component {
             </Col>
             <Col>
             <PieChartDetail />
+            <hr style={{border: '1px solid gray'}} />
+            <LineChartDetail />
             </Col>
           </Row>
         </Container>

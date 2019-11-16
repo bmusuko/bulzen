@@ -15,12 +15,12 @@ class PieChart extends React.Component{
     render(){
         return(
             <div>
-                <h1>Pie chart</h1>
+                <h2>Pie chart</h2>
                 <Pie data={{
                     labels: this.state.labels,
                     datasets: this.state.datasets
                 }}
-                height = '200%'
+                height = '150%'
                 />
             </div>
         )
