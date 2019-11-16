@@ -1,19 +1,48 @@
+import './heavy.css';
+
 import React from 'react';
-// import {
-//     Card, CardImg, CardText, CardBody,
-//     CardTitle, CardSubtitle, Button
-//   } from 'reactstrap';
-// import 'bootstrap/dist/css/bootstrap.css';
-// import heavy from './asset/heavy3.png'
-// import sparePart from './asset/sparePart.png'
-// import resources from './asset/resources.png'
+import { ButtonDropdown, Container, Row, Col, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+
+const Example = (props) => {
+  const [dropdownOpen, setOpen] = React.useState(false);
+
+  const toggle = () => setOpen(!dropdownOpen);
+
+  return (
+    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+      <DropdownToggle caret>
+        Button Dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem header>Jakarta</DropdownItem>
+        {/* <DropdownItem disabled>Action</DropdownItem> */}
+        <DropdownItem>Warehouse 1</DropdownItem>
+        <DropdownItem>Warehouse 2</DropdownItem>
+        <DropdownItem divider />
+        <DropdownItem header>Bekasi</DropdownItem>
+        <DropdownItem>Warehouse 3</DropdownItem>
+      </DropdownMenu>
+    </ButtonDropdown>
+  );
+}
 
 class Heavy extends React.Component {
-    render() {
+  // const [dropdownOpen, setDropdownOpen] = React.useState(false);
+  
+  // const toggle = () => setDropdownOpen(prevState => !prevState);
+  render() {
       return (
-        <div>
-            <h1>Heavy</h1>
-        </div>
+        <Container>
+          <Row>
+            <Col>
+              <h4>Select Warehouse</h4>
+              <Example />
+            </Col>
+            <Col>
+            <h1>HEHEHE</h1>
+            </Col>
+          </Row>
+        </Container>
       );
     }
 }
