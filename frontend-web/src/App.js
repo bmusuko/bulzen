@@ -4,7 +4,8 @@ import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import { homedir } from 'os';
 import { func } from 'prop-types';
-import { LineDemo } from 'chart.js'
+import LineDemo  from './chartss'
+import Home from './homepage'
 
 function App() {
   return (
@@ -12,21 +13,9 @@ function App() {
     {/* {location.pathname === '/login' || <Header/>} */}
     <Route exact path='/' component={Home}/>
     <Route exact path='/abc' component={Abc} />
-    <Route exact path='/chart' component={LineDemo} />
-    </Router>  
+    <Route exact path='/Chart' component={LineDemo} />
+    </Router>
     );
-}
-
-const AppChart = () => (
-  <div>
-    <LineDemo/>
-  </div>
-);
-
-function Home(){
-  return(
-    <h1>Home</h1>
-  );
 }
 
 const Abc = () =>{
