@@ -88,7 +88,7 @@ class Detail extends React.Component {
               <Row style={{'marginTop' : '1rem'}}>
                 <Col>
                   <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
-                    <CardBody style ={{backgroundColor:'red'}}>
+                    <CardBody style ={{backgroundColor:'rgba(253, 186, 53,1)'}}>
                       <tr>
                         <td>
                           <img src={stop} width='30rem' alt='gambar'/>
@@ -102,7 +102,7 @@ class Detail extends React.Component {
                 </Col>
                 <Col>
                   <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
-                    <CardBody style ={{backgroundColor:'red'}}>
+                    <CardBody style ={{backgroundColor:'rgba(242, 74, 123,1)'}}>
                       <tr>
                         <td>
                           <img src={wrench} width='30rem' alt='gambar'/>
@@ -130,7 +130,7 @@ class Detail extends React.Component {
                 </Col>
                 <Col>
                   <Card style = {{width: '100%' , 'border':'2px solid','padding':'none'}}>
-                    <CardBody style ={{backgroundColor:'red'}}>
+                    <CardBody style ={{backgroundColor:'rgba(18, 192, 165,1)'}}>
                       <tr>
                         <td>
                           <img src={check} width='30rem' alt='gambar' />

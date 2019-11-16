@@ -39,15 +39,3 @@ class itemList extends React.Component{
 }
 
 export default itemList
-
-// class LineChart extends React.Component{
-//   render() {
-//       return (
-//         <div>
-//           <h2>Line Chart</h2>
-//         </div>
-//       );
-//     }
-// }
-
-

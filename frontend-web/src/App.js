@@ -9,6 +9,7 @@ import Detail from './detail'
 import SparePart from './sparePart'
 import Consumables from './consumables'
 import Navibar from './navbar'
+import ItemDetail from './itemDetail'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Route exact path='/detail' component={Detail} />
     <Route exact path='/sparepart' component={SparePart} />
     <Route exact path='/consumables' component={Consumables} />
+    <Route exact path='/itemDetail' component={ItemDetail} />
     </Router>
     );
 }
