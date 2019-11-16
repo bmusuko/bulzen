@@ -9,13 +9,13 @@ import LineDemo  from './chartss'
 import Heavy from './heavy'
 import SparePart from './sparePart'
 import Consumables from './consumables'
-import Navbar from './navbar'
+import Navibar from './navbar'
 
 function App() {
   return (
     <Router>
     {/* {location.pathname === '/login' || <Header/>} */}
-    {/* <Navbar /> */}
+    <Navibar />
     <Route exact path='/' component={Home}/>
     <Route exact path='/heavy' component={Heavy} />
     <Route exact path='/sparepart' component={SparePart} />

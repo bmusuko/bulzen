@@ -1,14 +1,14 @@
 import React from 'react'
 import {
-    Nav, NavLink, NavbarBrand, Form, Button
+    Navbar, Nav, NavLink, NavbarBrand, Form, Button
   } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
-class Navbar extends React.Component {
+class Navibar extends React.Component {
     render() {
       return (
         <div>
-            <h1>Navbar</h1>
+            {/* <h1>Navbar</h1> */}
 
             <Navbar bg="dark" variant="dark">
                 <NavbarBrand href="#home">Navbar</NavbarBrand>
@@ -26,5 +26,5 @@ class Navbar extends React.Component {
       );
     }
 }
-export default Navbar
+export default Navibar
 
