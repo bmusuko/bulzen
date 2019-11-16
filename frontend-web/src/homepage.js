@@ -1,17 +1,19 @@
 import React from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, CardLink, Button, ListGroup, ListGroupItem
+    CardTitle, CardSubtitle, Button
   } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+import heavy from './asset/heavy3.png'
+import sparePart from './asset/sparePart.png'
+import resources from './asset/resources.png'
 
 class Home extends React.Component {
     render() {
       return (
         <div>
-          <h2>Home</h2>
           <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <CardImg top width="100%" src="../../asset/heavyeq.jpeg" alt="Card image cap" />
+            <CardImg top width="100%" src={heavy} alt="Card image cap" />
             <CardBody>
             <CardTitle>Heavy Equipment</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
@@ -21,7 +23,7 @@ class Home extends React.Component {
           </Card>
 
           <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <CardImg top width="100%" src="../../asset/heavyeq.jpeg" alt="Card image cap" />
+            <CardImg top width="100%" src={sparePart} alt="Card image cap" />
             <CardBody>
             <CardTitle>Heavy Equipment</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
@@ -31,7 +33,7 @@ class Home extends React.Component {
           </Card>
 
           <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <CardImg top width="100%" src="../../asset/heavyeq.jpeg" alt="Card image cap" />
+            <CardImg top width="100%" src={resources} alt="Card image cap" />
             <CardBody>
             <CardTitle>Heavy Equipment</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
