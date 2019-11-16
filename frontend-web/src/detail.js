@@ -4,6 +4,7 @@ import React from 'react';
 import { Container, Row, Col,Card,CardBody } from 'reactstrap';
 import PieChartDetail from './pieChart'
 import LineChartDetail from './lineChart'
+import ItemList from './itemList'
 import check from './asset/check.png'
 import stop from './asset/stop.png'
 import truck from './asset/truck.png'
@@ -64,7 +65,7 @@ class Detail extends React.Component {
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
-                          <img src={stop} width='30rem' />
+                          <img src={stop} width='30rem' alt='gambar'/>
                         </td>
                         <td>
                           <h3 style={{ color:'white'}}><b>78</b></h3>
@@ -78,7 +79,7 @@ class Detail extends React.Component {
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
-                          <img src={wrench} width='30rem' />
+                          <img src={wrench} width='30rem' alt='gambar'/>
                         </td>
                         <td>
                           <h3 style={{ color:'white'}}><b>78</b></h3>
@@ -92,7 +93,7 @@ class Detail extends React.Component {
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
-                          <img src={truck} width='30rem' />
+                          <img src={truck} width='30rem' alt='gambar'/>
                         </td>
                         <td>
                           <h3 style={{ color:'white'}}><b>78</b></h3>
@@ -106,7 +107,7 @@ class Detail extends React.Component {
                     <CardBody style ={{backgroundColor:'red'}}>
                       <tr>
                         <td>
-                          <img src={check} width='30rem' />
+                          <img src={check} width='30rem' alt='gambar' />
                         </td>
                         <td>
                           <h3 style={{ color:'white'}}><b>78</b></h3>
@@ -118,6 +119,8 @@ class Detail extends React.Component {
               </Row>
               <hr style={{border: '1px solid gray'}} />
               <LineChartDetail />
+              <hr style={{border: '1px solid gray'}} />
+              <ItemList />
             </Col>
           </Row>
         </Container>

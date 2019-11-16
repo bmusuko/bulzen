@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 // import { homedir } from 'os';
 // import { func } from 'prop-types';
 import Home from './homepage'
-import LineDemo  from './chartss'
 import Detail from './detail'
 import SparePart from './sparePart'
 import Consumables from './consumables'
@@ -20,7 +19,6 @@ function App() {
     <Route exact path='/detail' component={Detail} />
     <Route exact path='/sparepart' component={SparePart} />
     <Route exact path='/consumables' component={Consumables} />
-    <Route exact path='/Chart' component={LineDemo} />
     </Router>
     );
 }
