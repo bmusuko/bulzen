@@ -33,7 +33,12 @@ class LineChart extends React.Component{
         return (
           <div>
             <h2>Line Chart</h2>
-            <Line ref="chart" data={data} />
+            <Line ref="chart" data={data}
+            options={{
+                  legend: {
+                    display: false
+                  }
+                }} />
           </div>
         );
       }

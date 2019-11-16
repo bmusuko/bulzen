@@ -9,7 +9,7 @@ class Dropdown extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.changeValue = this.changeValue.bind(this);
-        if(this.props.warehouse){
+        if(this.props.warehouse === '0'){
             this.state = {
                 actions: [],
                 dropDownValue: 'Select Warehouse',

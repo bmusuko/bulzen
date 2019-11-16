@@ -8,7 +8,7 @@ class PieChart extends React.Component{
         this.state = {
             labels : ['On the way', 'Maintenace', 'Occupied', 'Available'],
             datasets : [{
-                data: [2000,4000,3500,600],
+                data: this.props.data,
                 backgroundColor:[
                     'rgba(2, 168, 194,1)',
                     'rgba(242, 74, 123,1)',
