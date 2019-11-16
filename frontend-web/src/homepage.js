@@ -6,7 +6,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.css';
 import heavy from './asset/heavy3.png'
 import sparePart from './asset/sparePart.png'
-import resources from './asset/resources.png'
+import consumables from './asset/resources.png'
 
 class Home extends React.Component {
     render() {
@@ -25,11 +25,11 @@ class Home extends React.Component {
           </Card>
 
           <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <a href='http://www.google.com'>
+            <a href='/sparepart'>
             <CardImg top width="100%" src={sparePart} alt="Card image cap" />
             </a>
             <CardBody>
-            <CardTitle>Heavy Equipment</CardTitle>
+            <CardTitle>Spare Part</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
             <Button>Button</Button>
@@ -37,9 +37,11 @@ class Home extends React.Component {
           </Card>
 
           <Card style = {{width: '18rem' , margin:'1rem'}}>
-            <CardImg top width="100%" src={resources} alt="Card image cap" />
+            <a href='/consumables'>
+            <CardImg top width="100%" src={consumables} alt="Card image cap" />
+            </a>
             <CardBody>
-            <CardTitle>Heavy Equipment</CardTitle>
+            <CardTitle>Consumables</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
             <Button>Button</Button>

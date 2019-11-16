@@ -8,13 +8,13 @@ import React from 'react';
 // import sparePart from './asset/sparePart.png'
 // import resources from './asset/resources.png'
 
-class Heavy extends React.Component {
+class Consumables extends React.Component {
     render() {
       return (
         <div>
-            <h1>Heavy</h1>
+          <h1>Consumables</h1>
         </div>
       );
     }
 }
-export default Heavy
+export default Consumables

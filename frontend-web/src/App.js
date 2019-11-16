@@ -7,6 +7,8 @@ import { func } from 'prop-types';
 import Home from './homepage'
 import LineDemo  from './chartss'
 import Heavy from './heavy'
+import SparePart from './sparePart'
+import Consumables from './consumables'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
     {/* {location.pathname === '/login' || <Header/>} */}
     <Route exact path='/' component={Home}/>
     <Route exact path='/heavy' component={Heavy} />
+    <Route exact path='/sparepart' component={SparePart} />
+    <Route exact path='/consumables' component={Consumables} />
     <Route exact path='/Chart' component={LineDemo} />
     </Router>
     );
