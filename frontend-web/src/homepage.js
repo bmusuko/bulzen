@@ -72,8 +72,8 @@ class Home extends React.Component {
                 <CardBody>
                 <h4 style={{'textAlign' : 'center'}}><b>Warehouse Sekayu</b></h4>
                 <Doughnut ref="chart" data={data1} options={option}/>
-                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>60 %</b></CardSubtitle>
-                <CardText>Jl. Raya Narogong Km 15 57 Cileungsi</CardText>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>60 % Storage Space Used</b></CardSubtitle>
+                <CardText style={{textAlign:'center', color: "rgba(253, 186, 53,1)"}}>768 m2 free space </CardText>
                 <Button href='/detail?warehouse=1'>Detail</Button>
                 </CardBody>
               </Card>
@@ -86,8 +86,8 @@ class Home extends React.Component {
                 <CardBody>
                 <h4 style={{'textAlign' : 'center'}}><b>Warehouse Lebakgede</b></h4>
                 <Doughnut ref="chart" data={data2} options={option}/>
-                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>30 %</b></CardSubtitle>
-                <CardText>Jl. Pemuda No.165, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah</CardText>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>30 % Storage Space Used</b></CardSubtitle>
+                <CardText style={{textAlign:'center', color: "#4CAF50"}}>1025 m2 free space </CardText>
                 <Button href='/detail?warehouse=2'>Detail</Button>
                 </CardBody>
               </Card>
@@ -100,9 +100,9 @@ class Home extends React.Component {
                 <CardBody>
                 <h4 style={{'textAlign' : 'center'}}><b>Warehouse Cileungsi</b></h4>
                 <Doughnut ref="chart" data={data3} options={option}/>
-                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>90 %</b></CardSubtitle>
-                <CardText>Jl. Imam Bonjol No.16, Lebakgede, Kecamatan Coblong</CardText>
-                <Button href='/detail?warehouse=3'>Detail</Button>
+                <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>90 % Storage Space Used</b></CardSubtitle>
+                <CardText style={{textAlign:'center', color: "rgba(255, 0, 90,1)"}}>150 m2 free space </CardText>
+                <Button href='/detail?warehouse=3' class="btn btn-default w-100">Detail</Button>
                 </CardBody>
               </Card>
             </Col>
