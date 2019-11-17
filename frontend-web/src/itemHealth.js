@@ -12,13 +12,14 @@ const option = {
 class Health extends React.Component{
     constructor(props){
         super(props);
-
+        console.log(this.props)
         this.state = {
             labels : ['a', 'b'],
             datasets : [{
-                data: [73,27],
+                data: [this.props.health,100-this.props.health],
                 backgroundColor:[
-                    '#4CAF50',
+                    (this.props.health >= 70) ? '#4CAF50' :
+                    this.props.health >=40 ? 'rgba(253, 186, 53,1)' : 'rgba(255, 0, 90,1)',
                     'white'
                 ]
             }]
@@ -33,7 +34,10 @@ class Health extends React.Component{
                     datasets: this.state.datasets
                 }} options={option}
                 />
-                <h3 style={{textAlign:'center',fontWeight:'bold', color:'#4caf50'}}>73%</h3>
+                <h3 style={{textAlign:'center',fontWeight:'bold', color:
+                    (this.props.health >= 70) ? '#4CAF50' :
+                    this.props.health >=40 ? 'rgba(253, 186, 53,1)' : 'rgba(255, 0, 90,1)'
+                }}>{this.props.health}%</h3>
             </div>
         )
     }

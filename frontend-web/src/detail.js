@@ -36,10 +36,12 @@ class Detail extends React.Component {
         data: [],
         line_data: [],
         is_click : false,
+        warehouse_text: '0'
       }
     } else{
       this.state = {
         warehouse : dropdownval,
+        warehouse_text: dropdownval,
         labels : ['On the way', 'Maintenace', 'Occupied', 'Available'],
         data: datas[parseInt(dropdownval)-1],
         line_data: line_datas[parseInt(dropdownval)-1],
@@ -51,11 +53,11 @@ class Detail extends React.Component {
   }
 
   onchange(value){
-    this.setState({warehouse:value,data:datas[parseInt(value)-1],line_data:line_datas[parseInt(value)-1]});
+    this.setState({warehouse:value,data:datas[parseInt(value)-1],line_data:line_datas[parseInt(value)-1],warehouse_text : value});
   }
 
   handleclick(){
-    this.setState({is_click:true,data:datas[3],line_data:line_datas[3]});
+    this.setState({is_click:true,data:datas[3],line_data:line_datas[3],warehouse_text : '4'});
   }
 
   render() {
@@ -111,7 +113,13 @@ class Detail extends React.Component {
             <Col>
             { this.state.warehouse === '0' ||
             <div>
-            <h2><b>Equipment Status</b></h2>
+            <h2><b>{
+              this.state.warehouse_text === '1' ? 'Warehouse Sekayu' : 
+              this.state.warehouse_text === '2' ? 'Warehouse Lebakgede' :
+              this.state.warehouse_text === '3' ? 'Warehouse Cileungsi' : 
+              this.state.warehouse_text === '4' ? 'Buldozer' : 'Warehouse'
+
+            } Status</b></h2>
               <Pie 
                 data=
                 {{
@@ -199,8 +207,8 @@ class Detail extends React.Component {
                     label : 'Jumlah',
                     fill: false,
                     lineTension: 0.1,
-                    backgroundColor: "#4976D1",
-                    borderColor: "#4976D1",
+                    backgroundColor: "#FFFFF",
+                    borderColor: "rgba(18, 192, 165,1)",
                     borderCapStyle: "butt",
                     borderDash: [],
                     borderDashOffset: 0.0,

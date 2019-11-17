@@ -93,7 +93,7 @@ class ItemDetail extends React.Component{
                         </Table>
                     </div>
                     <div class="col-sm-4">
-                        <ItemHealth />
+                        {!this.state.health || <ItemHealth health={this.state.health}/>}
                     </div>
                 </div>
                 <div class="row">
