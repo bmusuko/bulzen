@@ -15,7 +15,7 @@ const data1 = {
     {
       label: "Capacity",
       backgroundColor: [
-        "rgba(255, 127, 0)",
+        "rgba(253, 186, 53,1)",
         "rgba(0,0,0,0)"
       ],
       data: [60,40]
@@ -36,7 +36,7 @@ const data2 = {
     {
       label: "Capacity",
       backgroundColor: [
-        "rgba(0, 255, 0)",
+        "#4CAF50",
         "rgba(0,0,0,0)"
       ],
       data: [30,70]
@@ -50,7 +50,7 @@ const data3 = {
     {
       label: "Capacity",
       backgroundColor: [
-        "rgba(255, 0, 0)",
+        "rgba(255, 0, 90,1)",
         "rgba(0,0,0,0)"
       ],
       data: [90,10]
