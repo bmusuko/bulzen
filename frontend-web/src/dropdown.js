@@ -45,7 +45,7 @@ class Dropdown extends React.Component {
                 <DropdownItem onClick={this.changeValue} >Warehouse 2</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>Bekasi</DropdownItem>
-                <DropdownItem onClick={this.changeValue} >Warehouse 3</DropdownItem>
+                <DropdownItem onClick={this.changeValue} >Warehouse Cileungsi</DropdownItem>
             </DropdownMenu>
             </ButtonDropdown>
         )
