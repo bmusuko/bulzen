@@ -13,13 +13,23 @@ class Dropdown extends React.Component {
             this.state = {
                 actions: [],
                 dropDownValue: 'Select Warehouse',
+                dropDownText: 'Select Warehouse',
                 dropdownOpen: false,
             };
         } else{
+            let text = ''
+            if(this.props.warehouse == 1){
+                text = 'Warehouse Sekayu'
+            } else if(this.props.warehouse == 2){
+                text = 'Warehouse Lebakgede'
+            } else{
+                text = 'Warehouse Cileungsi'
+            }
             this.state = {
                 actions: [],
                 dropDownValue: 'Warehouse '+ this.props.warehouse,
                 dropdownOpen: false,
+                dropDownText: text 
             };
         }
     }
@@ -30,22 +40,22 @@ class Dropdown extends React.Component {
     }
 
     changeValue(event){
-        this.setState({dropDownValue: event.currentTarget.value})
+        this.setState({dropDownValue: event.currentTarget.value,dropDownText: event.currentTarget.getAttribute('text')});
         this.props.onchange(event.currentTarget.value.split(' ')[1])
     }
     render(){
         return (
             <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle caret>
-                {this.state.dropDownValue}
+                {this.state.dropDownText}
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem header>Jakarta</DropdownItem>
-                <DropdownItem onClick={this.changeValue} value='Warehouse 1'>Warehouse 1</DropdownItem>
-                <DropdownItem onClick={this.changeValue} value='Warehouse 2'>Warehouse 2</DropdownItem>
+                <DropdownItem onClick={this.changeValue} value='Warehouse 1' text='Warehouse Sekayu'>Warehouse Sekayu</DropdownItem>
+                <DropdownItem onClick={this.changeValue} value='Warehouse 2' text='Warehouse Lebakgede'>Warehouse Lebakgede</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>Bekasi</DropdownItem>
-                <DropdownItem onClick={this.changeValue} value='Warehouse 3'>Warehouse Cileungsi</DropdownItem>
+                <DropdownItem onClick={this.changeValue} value='Warehouse 3' text='Warehouse Cileungsi'>Warehouse Cileungsi</DropdownItem>
             </DropdownMenu>
             </ButtonDropdown>
         )

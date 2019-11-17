@@ -2,7 +2,7 @@ import React from 'react'
 import {Line} from 'react-chartjs-2'
 
 const data = {
-  labels: [14, 15, 16, 17, 18, 19, 20],
+  labels: [11, 12, 13,14, 15, 16, 17],
   datasets: [
     {
         label : 'Jumlah',

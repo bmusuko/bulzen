@@ -75,9 +75,12 @@ app.post('/changeStatus',(request,response)=>{
   } else if(status_baru == 1){
     lokasi = 'Bandar Udara Soekarno Hatta'
     health = 65
-  } else{
+  } else if(status_baru == 2){
     lokasi = 'Bandar Udara Soekarno Hatta'
     health = 30
+  } else{
+    lokasi = 'Warehouse 2'
+    health = 73
   }
   query = `UPDATE \`barang\` SET \`status\`= ${status_baru},\`kondisi\`= '${kondisi}',\`lokasi\`= '${lokasi}',\`health\`= ${health} WHERE \`id_barang\`= ${id_barang}`
   db.query(query, (err, result)=>{

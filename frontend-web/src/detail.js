@@ -18,10 +18,10 @@ const datas = [
 ]
 
 const line_datas = [
-  [65, 59, 80, 81, 56, 55, 40],
-  [60, 40, 45, 54, 56, 52, 43],
-  [65, 59, 81, 52, 56, 45, 40],
-  [25, 27, 20, 30, 25, 27, 28]
+  [65, 59, 80, 81, 56, 55, 50],
+  [60, 40, 45, 54, 56, 52, 64],
+  [65, 59, 81, 52, 56, 45, 60],
+  [25, 27, 20, 30, 25, 27, 20]
 ]
 
 class Detail extends React.Component {
@@ -193,7 +193,7 @@ class Detail extends React.Component {
               <hr style={{border: '1px solid gray'}} />
               <h2>Units available per day</h2>
             <Line ref="chart" data={{
-              labels: [14, 15, 16, 17, 18, 19, 20],
+              labels: [11, 12, 13,14, 15, 16, 17],
               datasets: [
                 {
                     label : 'Jumlah',
