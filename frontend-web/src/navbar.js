@@ -14,6 +14,7 @@ class Navibar extends React.Component {
                 <Nav className="mr-auto">
                 <NavLink href="/" style={{color : '#8F9396'}}>Home</NavLink>
                 <NavLink href="/detail" style={{color : '#8F9396'}}>Detail</NavLink>
+                <NavLink href="/log" style={{color : '#8F9396'}}>History</NavLink>
                 </Nav>
                 <Form inline>
                 </Form>
