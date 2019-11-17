@@ -32,7 +32,7 @@ class LineChart extends React.Component{
     render() {
         return (
           <div>
-            <h2>Line Chart</h2>
+            <h2>Units available per day</h2>
             <Line ref="chart" data={data}
             options={{
                   legend: {

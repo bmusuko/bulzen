@@ -191,7 +191,7 @@ class Detail extends React.Component {
                 </Col>
               </Row>
               <hr style={{border: '1px solid gray'}} />
-              <h2>Line Chart</h2>
+              <h2>Units available per day</h2>
             <Line ref="chart" data={{
               labels: [14, 15, 16, 17, 18, 19, 20],
               datasets: [
@@ -221,6 +221,13 @@ class Detail extends React.Component {
             options={{
                   legend: {
                     display: false
+                  },
+                  scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                   }
                 }} />
               </div>
