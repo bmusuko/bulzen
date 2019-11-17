@@ -1,0 +1,9 @@
+ada scan untuk barang consumable, qrcode nya ga ditaro di benda tapi di taro di papan gitu. waktu di scan di masukkan quantitiy.
+Fitur yang harus ditambahkan itu kalau diproyek harus ada qrcode scanner untuk memasukkan barang yang conssumable
+
+
+kebutuhan sparepart 
+
+kalau maintanacnce barang yang dibutuhkan cukup ga 
+
+berapa persen barang tersebut ready di gunakan

@@ -27,7 +27,15 @@ class ItemDetail extends React.Component{
                                 <th>Nama</th>
                                 <td>Kobelco D-150</td>
                             </tr>
-                                <tr>
+                            <tr>
+                                <th>Year</th>
+                                <td>2012</td>
+                            </tr>
+                            <tr>
+                                <th>Lisence Plate</th>
+                                <td>B 5836 XXW</td>
+                            </tr>
+                            <tr>
                                 <th>Lokasi</th>
                                 <td>Warehouse 2</td>
                             </tr>

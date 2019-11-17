@@ -2,7 +2,7 @@ Database :
 
 User :
 - Username
-- Nama
+- Name
 - Email
 - password
 - User level {0,1} 
@@ -13,6 +13,7 @@ Warehouse :
 
 Category :
 - id_category
+- status_category {}
 - nama_category
 
 Barang :
@@ -20,11 +21,13 @@ Barang :
 - Brand
 - id_category
 - Model
-- Year
+- Yearx
 - License plate
 - Status
 - id_warehouse
-- current_project {}
+- current_project {
+	id_project
+}
 - is_maintain
 
 Project :
@@ -36,7 +39,6 @@ status : {
 	1 = occupied
 	2 = maintanance
 	3 = available
-	4 = OTW
 }
 
 History = 
@@ -51,6 +53,6 @@ History =
 Backend = 
 - Register
 - Login
-- Get dashboard
+- List Category dari heavy equipment, 
 - Get Barang berdasarkan warehouse
-- 
+- Get 
