@@ -2,7 +2,6 @@ import './detail.css';
 import Dropdown from './dropdown'
 import React from 'react';
 import { Container, Row, Col,Card,CardBody } from 'reactstrap';
-import LineChart from './lineChart'
 import ItemList from './itemList'
 import check from './asset/check.png'
 import stop from './asset/stop.png'
@@ -22,7 +21,7 @@ const line_datas = [
   [65, 59, 80, 81, 56, 55, 40],
   [60, 40, 45, 54, 56, 52, 43],
   [65, 59, 81, 52, 56, 45, 40],
-  [65, 65, 80, 81, 56, 59, 48]
+  [25, 27, 20, 30, 25, 27, 28]
 ]
 
 class Detail extends React.Component {
