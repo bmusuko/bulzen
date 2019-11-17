@@ -199,7 +199,7 @@ class Detail extends React.Component {
                 </Col>
               </Row>
               <hr style={{border: '1px solid gray'}} />
-              <h2>Units available per day</h2>
+              <h2 style={{fontWeight:'bold'}}>Units available per day</h2>
             <Line ref="chart" data={{
               labels: [11, 12, 13,14, 15, 16, 17],
               datasets: [
