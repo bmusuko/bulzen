@@ -91,7 +91,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>8 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 1624 TKX</td>
                         <td>Bulldozer</td>
@@ -99,7 +99,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>8 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>
@@ -107,7 +107,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>8 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 1624 TKX</td>
                         <td>Bulldozer</td>
@@ -115,7 +115,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>8 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>
@@ -123,7 +123,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>12 November 2019</td>
+                        <td>7 November 2019</td>
                         <td>Komatsu PC200</td>
                         <td>E 2920 TY</td>
                         <td>Excavator</td>
@@ -131,7 +131,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(18, 192, 165,1)'}}>Available</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>6 November 2019</td>
                         <td>Komatsu PC200</td>
                         <td>D 2438 AC</td>
                         <td>Excavator</td>
@@ -139,7 +139,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>6 November 2019</td>
                         <td>Hino Dutro 130 HD</td>
                         <td>D 3511 RHY</td>
                         <td>Dump Truck</td>
@@ -147,7 +147,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(242, 74, 123,1)'}}>Under maintanence</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>6 November 2019</td>
                         <td>Komatsu PC200</td>
                         <td>D 2438 AC</td>
                         <td>Excavator</td>
@@ -155,7 +155,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>10 November 2019</td>
+                        <td>5 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>
@@ -163,7 +163,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>3 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 1624 TKX</td>
                         <td>Bulldozer</td>
@@ -171,7 +171,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>3 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>
@@ -179,7 +179,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>3 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 1624 TKX</td>
                         <td>Bulldozer</td>
@@ -187,7 +187,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>15 November 2019</td>
+                        <td>3 November 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>
@@ -195,7 +195,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>12 November 2019</td>
+                        <td>1 November 2019</td>
                         <td>Komatsu PC200</td>
                         <td>E 2920 TY</td>
                         <td>Excavator</td>
@@ -203,7 +203,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(18, 192, 165,1)'}}>Available</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>29 Oktober 2019</td>
                         <td>Komatsu PC200</td>
                         <td>D 2438 AC</td>
                         <td>Excavator</td>
@@ -211,7 +211,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(253, 186, 53,1)'}}>Occupied</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>29 Oktober 2019</td>
                         <td>Hino Dutro 130 HD</td>
                         <td>D 3511 RHY</td>
                         <td>Dump Truck</td>
@@ -219,7 +219,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(242, 74, 123,1)'}}>Under maintanence</td>
                     </tr>
                     <tr>
-                        <td>11 November 2019</td>
+                        <td>29 Oktober 2019</td>
                         <td>Komatsu PC200</td>
                         <td>D 2438 AC</td>
                         <td>Excavator</td>
@@ -227,7 +227,7 @@ class itemList extends React.Component{
                         <td style ={{color:'rgba(2, 168, 194,1)'}}>On the way</td>
                     </tr>
                     <tr>
-                        <td>10 November 2019</td>
+                        <td>25 Oktober 2019</td>
                         <td>Komatsu D31E</td>
                         <td>B 3230 BE</td>
                         <td>Bulldozer</td>

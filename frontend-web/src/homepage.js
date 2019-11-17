@@ -70,7 +70,7 @@ class Home extends React.Component {
                 <CardImg top width="100%" src={warehouse1} alt="Card image cap" />
                 </a>
                 <CardBody>
-                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 1</b></h4>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse Sekayu</b></h4>
                 <Doughnut ref="chart" data={data1} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>60 %</b></CardSubtitle>
                 <CardText>Jl. Raya Narogong Km 15 57 Cileungsi</CardText>
@@ -84,7 +84,7 @@ class Home extends React.Component {
                 <CardImg top width="100%" src={warehouse2} alt="Card image cap" />
                 </a>
                 <CardBody>
-                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 2</b></h4>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse Lebakgede</b></h4>
                 <Doughnut ref="chart" data={data2} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>30 %</b></CardSubtitle>
                 <CardText>Jl. Pemuda No.165, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah</CardText>
@@ -98,7 +98,7 @@ class Home extends React.Component {
                 <CardImg top width="100%" src={warehouse3} alt="Card image cap" />
                 </a>
                 <CardBody>
-                <h4 style={{'textAlign' : 'center'}}><b>Warehouse 3</b></h4>
+                <h4 style={{'textAlign' : 'center'}}><b>Warehouse Cileungsi</b></h4>
                 <Doughnut ref="chart" data={data3} options={option}/>
                 <CardSubtitle style={{'textAlign' : 'center','margin-top':'1rem'}}><b>90 %</b></CardSubtitle>
                 <CardText>Jl. Imam Bonjol No.16, Lebakgede, Kecamatan Coblong</CardText>

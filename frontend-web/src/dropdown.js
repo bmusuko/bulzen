@@ -50,12 +50,12 @@ class Dropdown extends React.Component {
                 {this.state.dropDownText}
             </DropdownToggle>
             <DropdownMenu>
-                <DropdownItem header>Jakarta</DropdownItem>
-                <DropdownItem onClick={this.changeValue} value='Warehouse 1' text='Warehouse Sekayu'>Warehouse Sekayu</DropdownItem>
+                <DropdownItem header>Jawa Barat</DropdownItem>
+                <DropdownItem onClick={this.changeValue} value='Warehouse 3' text='Warehouse Cileungsi'>Warehouse Cileungsi</DropdownItem>
                 <DropdownItem onClick={this.changeValue} value='Warehouse 2' text='Warehouse Lebakgede'>Warehouse Lebakgede</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem header>Bekasi</DropdownItem>
-                <DropdownItem onClick={this.changeValue} value='Warehouse 3' text='Warehouse Cileungsi'>Warehouse Cileungsi</DropdownItem>
+                <DropdownItem header>Jawa Tengah</DropdownItem>
+                <DropdownItem onClick={this.changeValue} value='Warehouse 1' text='Warehouse Sekayu'>Warehouse Sekayu</DropdownItem>
             </DropdownMenu>
             </ButtonDropdown>
         )
