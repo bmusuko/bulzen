@@ -63,7 +63,7 @@ class itemList extends React.Component{
                 <a href='/itemDetail' style={{textDecoration:'inherit',color:'inherit'}}>2012</a>
               </td>
               <td>
-                <a href='/itemDetail' style={{textDecoration:'inherit',color:'inherit'}}><b style={{'color' : 'rgba(18, 192, 165,1)'}}>Available</b></a>
+                <a href='/itemDetail' style={{textDecoration:'inherit',color:'inherit'}}><b style={{'color':'rgba(253, 186, 53,1)'}}>Occupied</b></a>
               </td>
             </tr>
           <tr>
@@ -78,7 +78,7 @@ class itemList extends React.Component{
             <td>Caterpillar</td>
             <td>D6T-XL</td>
             <td>2018</td>
-            <td><b style={{'color':'rgba(253, 186, 53,1)'}}>Occupied</b></td>
+            <td><b style={{'color' : 'rgba(18, 192, 165,1)'}}>Available</b></td>
           </tr>
           <tr>
             <th scope="row">6</th>

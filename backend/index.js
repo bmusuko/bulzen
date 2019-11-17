@@ -76,7 +76,7 @@ app.post('/changeStatus',(request,response)=>{
     lokasi = 'Bandar Udara Soekarno Hatta'
     health = 65
   } else if(status_baru == 2){
-    lokasi = 'Bandar Udara Soekarno Hatta'
+    lokasi = 'Workshop'
     health = 30
   } else{
     lokasi = 'Warehouse 2'

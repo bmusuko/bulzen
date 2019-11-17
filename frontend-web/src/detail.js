@@ -8,7 +8,7 @@ import stop from './asset/stop.png'
 import truck from './asset/truck.png'
 import wrench from './asset/tools.png'
 import {Pie,Line} from 'react-chartjs-2'
-
+import { Button } from 'reactstrap';
 
 const datas = [
   [70,30,99,50],
@@ -199,8 +199,8 @@ class Detail extends React.Component {
                 </Col>
               </Row>
               <hr style={{border: '1px solid gray'}} />
-              <h2 style={{fontWeight:'bold'}}>Units available per day</h2>
-            <Line ref="chart" data={{
+              <h2 style={{fontWeight:'bold'}}>Smart Parking Allocation</h2>
+            {/* <Line ref="chart" data={{
               labels: [11, 12, 13,14, 15, 16, 17],
               datasets: [
                 {
@@ -237,7 +237,38 @@ class Detail extends React.Component {
                         }
                     }]
                   }
-                }} />
+                }} /> */}
+                {this.state.warehouse_text === '1' ?
+                <div style={{'margin-left':'10rem'}}>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" />
+                    </div>
+                    : this.state.warehouse_text === '2' ?
+                    <div style={{'margin-left':'10rem'}}>
+                    <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    </div>
+                    : 
+                    <div style={{'margin-left':'10rem'}}>
+                    <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="danger" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" />
+                    <br></br>
+                    <Button color="primary" /> <Button color="danger" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="primary" /> <Button color="danger" />
+                    </div>
+                  }
               </div>
             }
             </Col>
